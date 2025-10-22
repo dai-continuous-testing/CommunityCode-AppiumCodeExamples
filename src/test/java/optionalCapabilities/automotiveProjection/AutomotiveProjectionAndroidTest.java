@@ -133,7 +133,7 @@ class AutomotiveProjectionAndroidTest {
 
     @AfterEach
     public void tearDown() {
-        System.out.println("Report URL: " + driver.getCapabilities().getCapability("reportUrl"));
+        System.out.println("Report URL: " + driver.getCapabilities().getCapability("digitalai:reportUrl"));
         driver.quit();
     }
 }

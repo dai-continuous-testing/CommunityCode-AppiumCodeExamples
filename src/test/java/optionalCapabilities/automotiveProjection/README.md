@@ -1,4 +1,4 @@
-# Automotive Projection Android Test
+# Automotive Projection Android auto and Carplay Test
 
 This project contains a test for the automotive projection capability using Appium and OpenCV.
 
@@ -17,7 +17,7 @@ See build.gradle file
 2. Install the required dependencies using Gradle.
 3. Set up the environment variables for `CLOUD_URL`, `ACCESS_KEY`, `APPIUM_VERSION`, and `DHU_SCREEN_SIZE`.
 
-## Test Description
+## Android auto Test Description
 
 The test performs the following steps:
 
@@ -28,6 +28,13 @@ https://docs.digital.ai/continuous-testing/docs/te/test-execution-home/mobile-an
 4. Capture an image of the elements on the DHU screen that you want to interact with (in this example we will tap on location, exit, start buttons and on search bar).
 5. Uses OpenCV to find and interact with UI elements in the DHU screen.
 6. Taps on the search bar, enters a location, and starts navigation.
+
+## Carplay Test Description
+The test performs the following steps:
+1. Sets up the desired capabilities for the iOS driver.
+2. getting dump from the application running on Carplay screen (must be 3rd part application).
+3. parse the dump and find the element to interact with (in this example we will tap on search bar).
+4. perform tap on the element.
 
 ## Additional Information
 
