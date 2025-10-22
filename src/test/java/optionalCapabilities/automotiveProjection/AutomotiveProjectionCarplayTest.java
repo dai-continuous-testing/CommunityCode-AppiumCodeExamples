@@ -28,7 +28,6 @@ class AutomotiveProjectionCarplayTest {
     @BeforeEach
     public void setUp() throws MalformedURLException {
         XCUITestOptions options = new XCUITestOptions()
-                .setBundleId("com.waze.iphone")
                 .amend("digitalai:testName", "Android Auto quick start test")
                 .amend("digitalai:accessKey", ACCESS_KEY)
                 .amend("digitalai:appiumVersion", APPIUM_VERSION)
@@ -81,7 +80,7 @@ class AutomotiveProjectionCarplayTest {
 
     @AfterEach
     public void tearDown() {
-        System.out.println("Report URL: " + driver.getCapabilities().getCapability("reportUrl"));
+        System.out.println("Report URL: " + driver.getCapabilities().getCapability("digitalai:reportUrl"));
         driver.quit();
     }
 }
