@@ -14,7 +14,6 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 class AutomotiveProjectionCarplayTest {
-
     static {
         nu.pattern.OpenCV.loadLocally(); // Load OpenCV native library
     }
