@@ -1,7 +1,6 @@
 package optionalCapabilities.automotiveProjection;
 
-import io.appium.java_client.android.AndroidDriver;
-
+import io.appium.java_client.ios.IOSDriver;
 import java.awt.Point;
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -23,7 +22,7 @@ class AutomotiveProjectionCarplayTest {
     private static final String APPIUM_VERSION = "<APPIUM_VERSION>";
     private static final String CARPLAY_SCREEN_SIZE = "800x480";
 
-    private AndroidDriver driver = null;
+    private IOSDriver driver = null;
 
     @BeforeEach
     public void setUp() throws MalformedURLException {
@@ -33,7 +32,7 @@ class AutomotiveProjectionCarplayTest {
                 .amend("digitalai:appiumVersion", APPIUM_VERSION)
                 .amend("digitalai:deviceQuery", "@os='ios'")
                 .amend("digitalai:automotiveProjection", CARPLAY_SCREEN_SIZE);
-        driver = new AndroidDriver(new URL(CLOUD_URL), options);
+        driver = new IOSDriver(new URL(CLOUD_URL), options);
     }
 
     @Test
