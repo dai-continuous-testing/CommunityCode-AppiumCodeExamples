@@ -13,9 +13,6 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 class AutomotiveProjectionCarplayTest {
-    static {
-        nu.pattern.OpenCV.loadLocally(); // Load OpenCV native library
-    }
 
     private static final String CLOUD_URL = "<CLOUD_URL>/wd/hub";
     private static final String ACCESS_KEY = "<ACCESS_KEY>";
